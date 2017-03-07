@@ -22,9 +22,8 @@
 		
 		<link href="css/reset.css" rel="stylesheet" type="text/css" /> 
 		<link href="css/style.css?v1.0" rel="stylesheet" type="text/css" />  
-		<link href="css/font-awesome.css" rel="stylesheet" type="text/css" />
-<!--        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />-->
-        <link href='https://fonts.googleapis.com/css?family=Lato:100,300' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	</head>
     
     <!-- SCRIPTS -->

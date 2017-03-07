@@ -2,13 +2,10 @@
 /* CSS Document */
 
 body {
-	position:absolute;
-    width:100%;
-	height:100%;
 	line-height:1.5;
-	font-family:"Lato";
-	background-color:rgb(241,242,247);
-    color: #333;
+	font-family:"Montserrat";
+	background-color:rgb(255,255,255);
+    color: #212121;
     overflow-x: hidden;
 }
 
@@ -114,7 +111,7 @@ header .call {
     color: #fff;
     margin: 80px auto 0;
 }
-header .call h3 {
+header .call h2 {
     font-family:"Lato";
     font-size: 54px;
     font-weight: 300px;
@@ -124,13 +121,129 @@ header .call h3 {
 header .call p {
     font-family:"Lato";
     font-size: 24px;
-    font-weight: 100px;
+    font-weight: 100;
     line-height: 29px;
 }
-section {
-    
+.projects {
+    margin: 75px auto;   
 }
-
+.projects .retangle {
+    width: 136px;
+    height: 2px;
+    background: #D25CF1;
+}
+.projects h1 {
+    font-family:"Montserrat-Regular";
+    font-weight: normal;
+    font-size: 44px;
+    line-height: 54px;
+    margin: 24px 0;
+    color: #212121;
+}
+.projects h4 {
+    font-family:"Lato";
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 34px;
+    color: rgba(0,0,0,0.54);
+}
+.projects .saldometro {
+    width: 100%;
+    padding: 44px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26), 0 2px 10px 0 rgba(0,0,0,0.16);
+    border-radius: 4px;
+    margin: 64px 0;
+    float: left;
+    background-image: url(../images/saldometro@2x.png);
+    background-image: 
+        -webkit-image-set(
+        "../images/saldometro.png" 1x,
+        "../images/saldometro@2x.png" 2x,
+    );
+    background-image: 
+        image-set(
+        "../images/saldometro.png" 1x,
+        "../images/saldometro@2x.png" 2x,
+    );
+    background-position:95% 100%;
+    background-size: 380px;
+    background-repeat: no-repeat;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.projects .saldometro h5 {
+    width: 167px;
+    height: 34px;
+    font-family: 'Lato', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 34px;
+    color: #33C45F;
+}
+.projects .faces {
+    float: left;
+    margin: 32px 0;
+}
+.projects .faces .face {
+    float: left;
+    display: inline;
+    margin: 20px 4px 0 4px;
+    width: 44px;
+    height: 44px;
+}
+.projects .faces .face:first-child {
+    margin: 0 4px;
+    width: 64px;
+    height: 64px;
+}
+.projects .faces .face img {
+    width: 100%;
+}
+.projects .face-plus {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #F5A623;
+}
+.projects .face-plus:hover {
+    background: #33C45F;
+}
+.projects .face-plus a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 34px;
+    padding: 5px 0 0 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.projects p {
+    float: left;
+    clear: both;
+    width: 50%;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    color: rgba(0,0,0,0.54);
+}
+.projects .icons {
+    float: left;
+    clear: both;
+    margin: 35px 0 0 0;
+}
+.projects .icons img {
+    width: 34.5px;
+    height: 39px;
+    margin: 0 20.72px 0 0;
+}
 
 
 /************************************************************ MEDIA PRINT ****/
