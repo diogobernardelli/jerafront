@@ -54,6 +54,65 @@ a {
 	padding:5px 0;
 }
 
+header {
+    position: relative;
+    width: 100%;
+    height: 680px;
+    background-color: #212121;
+    
+}
+header::before {
+    content: "";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/img_bg@2x.png);
+    background-image: 
+        -webkit-image-set(
+        "../images/img_bg.png" 1x,
+        "../images/img_bg@2x.png" 2x,
+    );
+    background-image: 
+        image-set(
+        "../images/img_bg.png" 1x,
+        "../images/img_bg@2x.png" 2x,
+    );
+    background-size: 100%;
+    background-repeat: no-repeat;
+    opacity: .25; 
+}
+header .hcontent {
+    position: relative;
+    width: 900px;
+    height: 100px;
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+header img {
+    margin-top: 30px;
+}
+header nav {
+    float: right;
+    position: relative;
+}
+header nav li {
+    float: left;
+    display: inline;
+    margin: 40px 12px 0;
+    padding-bottom: 9.25px;
+}
+header nav li:hover {
+    border-bottom: 4px solid #33C45F;
+}
+header nav li a {
+    color: #fff;
+}
+header call {}
+
 
 
 
@@ -63,5 +122,10 @@ a {
 
 
 /************************************************************ RESPONSIVE ****/
-@media only screen and (max-width: 1920px) {
+@media only screen and (max-width: 900px) {
+    header .hcontent {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
