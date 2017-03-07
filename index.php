@@ -11,13 +11,34 @@
             
             <nav>
                 <ul>
-                    <li><a href="javascript:;">quem somos</a></li>
-                    <li><a href="javascript:;">labs</a></li>
-                    <li><a href="javascript:;">o que fazemos</a></li>
-                    <li><a href="javascript:;">startups</a></li>
-                    <li><a href="javascript:;">empresas</a></li>
-                    <li><a href="javascript:;">blog</a></li>
-                    <li><a href="javascript:;">contato</a></li>
+                    <li>
+                        <a href="javascript:;">quem somos</a>
+                        <div class="border"></div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">labs</a>
+                        <div class="border"></div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">o que fazemos</a>
+                        <div class="border"></div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">startups</a>
+                        <div class="border"></div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">empresas</a>
+                        <div class="border"></div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">blog</a>
+                        <div class="border"></div>
+                    </li>
+                    <li>
+                        <a href="javascript:;">contato</a>
+                        <div class="border"></div>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -52,11 +73,24 @@
     </section>
     
     <section class="idea">
-        
+        <img srcset="images/img_coffee.png 1x,
+                         images/img_coffee@2x.png 2x">
+        <h2>Gostou do nosso trabalho?</h2>
+        <p>Você pode mandar sua idéia para nosso time dar uma olhada.</p>
+        <div class="line">
+            <a href="javascript:;">Envie sua idéia</a>
+        </div>
     </section>
     
     <footer>
-        
+        <ul>
+            <li><a href="javascript:;"><img src="images/fa-facebook.png"></a></li>
+            <li><a href="javascript:;"><img src="images/fa-twitter.png"></a></li>
+            <li><a href="javascript:;"><img src="images/fa-youtube-play.png"></a></li>
+            <li><a href="javascript:;"><img src="images/fa-linkedin.png"></a></li>
+            <li><a href="javascript:;"><img src="images/fa-instagram.png"></a></li>
+        </ul>
+        <div class="signature">orgulhosamente produzindo em CGR</div>
     </footer>
 </body>
 </html>
