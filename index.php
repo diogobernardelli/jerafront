@@ -3,10 +3,11 @@
 <body>
     <header>
         <div class="hcontent size">
-            <img srcset="images/logo-jera-header.png 1x,
+            <a href="javascript:;"><img srcset="images/logo-jera-header.png 1x,
                          images/logo-jera-header@1.5x.png 1.5x,
                          images/logo-jera-header@2x.png 2x,
                          images/logo-jera-header@3x.png 3x">
+            </a>
             
             <nav>
                 <ul>
@@ -26,6 +27,7 @@
             <h2>Onde as idéias ganham forma</h2>
             <p>Labs é o nosso repositório de ideias da nossa equipe que foram tiradas do papel e viraram projetos internos mais divertidos.</p>
         </div>
+        <div class="gray"></div>
     </header>
     
     <section class="projects">
