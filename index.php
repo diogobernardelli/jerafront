@@ -28,6 +28,16 @@
         </div>
     </header>
     
+    <section class="projects">
+        
+    </section>
     
+    <section class="idea">
+        
+    </section>
+    
+    <footer>
+        
+    </footer>
 </body>
 </html>

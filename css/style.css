@@ -12,6 +12,11 @@ body {
     overflow-x: hidden;
 }
 
+@font-face {
+	font-family:"Montserrat-Regular";
+	src:url("../fonts/montserrat/Montserrat-Regular.otf") format('otf');
+}
+
 /************************************************************ GENERAL ****/
 *::-moz-selection {
 background:#ff9800;
@@ -40,7 +45,7 @@ a {
 	width:100%;
 	padding:5px 0;
 }
-.size {
+.size, section {
     width: 100%;
     max-width: 900px;
 }
@@ -89,16 +94,20 @@ header nav {
     position: relative;
 }
 header nav li {
+    font-family: "Montserrat-Regular";
     float: left;
     display: inline;
-    margin: 40px 12px 0;
-    padding-bottom: 9.25px;
+    margin: 40px 0 0;
 }
 header nav li:hover {
     border-bottom: 4px solid #33C45F;
 }
 header nav li a {
+    display: block;
+    width: 100%;
+    height: 100%;
     color: #fff;
+    padding: 0 12px 9.25px;
 }
 header .call {
     text-align: center;
@@ -118,7 +127,9 @@ header .call p {
     font-weight: 100px;
     line-height: 29px;
 }
-
+section {
+    
+}
 
 
 
