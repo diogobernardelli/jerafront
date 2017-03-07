@@ -8,7 +8,12 @@
                          images/logo-jera-header@2x.png 2x,
                          images/logo-jera-header@3x.png 3x">
             </a>
-            
+            <div class="nav-responsive">
+                <a href="javascript:;"><img src="images/menu-responsivo.png"></a>
+            </div>
+            <div class="nav-close">
+                <a href="javascript:;"><img src="images/menu-close.png"></a>
+            </div>
             <nav>
                 <ul>
                     <li>

@@ -45,6 +45,8 @@ a {
     width: 100%;
     max-width: 900px;
 }
+
+/********** HEADER ****/
 header {
     position: relative;
     width: 100%;
@@ -97,7 +99,7 @@ header nav li {
     display: inline;
     margin: 40px 0 0;
 }
-header .border {
+header nav .border {
     width: 100%;
     height: 4px;
     background: #33C45F;
@@ -139,6 +141,17 @@ header .call p {
     font-weight: 100;
     line-height: 29px;
 }
+header .nav-responsive, header .nav-close {
+    display: none;
+    float: right;
+    width: 30px;
+    margin-top: 5px;
+}
+header .nav-responsive img, header .nav-close img {
+    width: 100%;
+}
+
+/********** SECTION PROJECTS ****/
 .projects {
     margin: 75px auto;   
 }
@@ -259,6 +272,8 @@ header .call p {
     height: 39px;
     margin: 0 20.72px 0 0;
 }
+
+/********** SECTION IDEA ****/
 .idea {
     float: left;
     text-align: center;
@@ -298,6 +313,8 @@ header .call p {
 .idea .line {
     margin: 34px 0 0 0;
 }
+
+/********** FOOTER ****/
 footer {
     margin: 0 auto;
 }
@@ -336,8 +353,154 @@ footer .signature {
 
 /************************************************************ RESPONSIVE ****/
 @media only screen and (max-width: 900px) {
+    .size, .projects, footer {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
     header .hcontent {
-        padding-left: 20px;
-        padding-right: 20px;
+        z-index: 9;
+    }
+    header .nav-responsive {
+        display: block;
+    }
+    header .nav-close {
+        opacity: 0.6;
+    }
+    header nav {
+        display: none;
+        position: absolute;
+        width: 100%;
+        z-index: 9;
+        left: 0;
+    }
+    header nav li {
+        position: relative;
+        font-family: "Montserrat-Regular";
+        float: left;
+        clear: both;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    header nav li:hover .border {
+        opacity: 0;
+    }
+    header nav li a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        background: rgba(0,0,0,0.9);
+    }
+    header nav li:hover a {
+       border-bottom: 1px solid rgba(51, 196, 95,0.4);
+    }
+    header .call {
+        width: 100%;
+        position: relative;
+        margin: 0;
+        top: 0;
+        left: 0;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    header {
+        height: 580px;
+    }
+    .projects .saldometro {
+        background-size: 290px;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    header .call h2 {
+        font-size: 44px;
+    }
+    header .call p {
+        font-size: 20px;
+    }
+    .projects h1 {
+        font-size: 40px;
+    }
+    .projects h4 {
+        font-size: 22px;
+    }
+    .projects p {
+        width: 100%;
+        color: rgba(0,0,0,0.8);
+    }
+    .projects .saldometro {
+        position: relative;
+        background: none;
+    }
+    .projects .saldometro::before {
+        content: "";
+        position: absolute;
+        top: 0; 
+        left: 0;
+        width: 100%; 
+        height: 100%;  
+        opacity: .1; 
+        z-index: -1;
+        background-image: url(../images/saldometro.png);
+        background-repeat: no-repeat;
+        background-position: 95% 100%;
+        background-size: 400px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    footer ul {
+        margin: 15px 0 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+    footer ul li {
+        float: none;
+        text-align: center;
+    }
+    footer .signature {
+        width: 100%;
+        text-align: center;
+        margin: 0 0 10px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .idea h2 {
+        font-size: 44px;
+    }
+    .idea p {
+        font-size: 20px;
+    }
+    .idea a {
+        padding: 17px 100px;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .projects {
+        text-align: center;
+    }
+    .projects .faces .face:first-child {
+        width: 54px;
+        height: 54px;
+    }
+    .projects .faces .face {
+        width: 36px;
+        height: 36px;
+    }
+    .projects .icons {
+        float: none;
+        padding: 35px 0 0 0;
+    }
+    .projects .saldometro h5 {
+        width: 100%;
     }
 }
