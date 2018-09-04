@@ -1,0 +1,506 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	line-height:1.5;
+	font-family:"Montserrat";
+	background-color:rgb(255,255,255);
+    color: #212121;
+    overflow-x: hidden;
+}
+
+@font-face {
+	font-family:"Montserrat-Regular";
+	src:url("../fonts/montserrat/Montserrat-Regular.otf") format('otf');
+}
+
+/************************************************************ GENERAL ****/
+*::-moz-selection {
+background:#ff9800;
+color:#ffffff;
+}
+*::selection {
+background:#ff9800;
+color:#ffffff;
+}
+a {
+	text-decoration:none;
+}
+.left {
+	float:left !important;
+}
+.right {
+	float:right !important;
+}
+.clear {
+	clear:both !important;
+}
+.line {
+    position: relative;
+	float:left;
+	clear:both;
+	width:100%;
+}
+.size, .projects, footer {
+    width: 100%;
+    max-width: 900px;
+}
+
+/********** HEADER ****/
+header {
+    position: relative;
+    width: 100%;
+    height: 680px;
+    background-image: url(../images/img_bg@2x.png);
+    background-image: 
+        -webkit-image-set(
+        "../images/img_bg.png" 1x,
+        "../images/img_bg@2x.png" 2x,
+    );
+    background-image: 
+        image-set(
+        "../images/img_bg.png" 1x,
+        "../images/img_bg@2x.png" 2x,
+    );
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    
+}
+header .gray {
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-color: #212121;
+    opacity: .75; 
+}
+header .hcontent {
+    position: relative;
+    height: 100px;
+    margin: 0 auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 1;
+}
+header img {
+    margin-top: 30px;
+}
+header nav {
+    float: right;
+    position: relative;
+}
+header nav li {
+    position: relative;
+    font-family: "Montserrat-Regular";
+    float: left;
+    display: inline;
+    margin: 40px 0 0;
+}
+header nav .border {
+    width: 100%;
+    height: 4px;
+    background: #33C45F;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    border-radius: 2px;
+    transition:all 0.1s ease-in-out;
+}
+header nav li:hover .border {
+    opacity: 1;
+}
+header nav li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    padding: 0 12px 9.25px;
+}
+header .call {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -170px 0 0 -450px;
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+header .call h2 {
+    font-family:"Lato";
+    font-size: 54px;
+    font-weight: 300px;
+    line-height: 64px;
+    margin: 24px;
+}
+header .call p {
+    font-family:"Lato";
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 29px;
+}
+header .nav-responsive, header .nav-close {
+    display: none;
+    float: right;
+    width: 30px;
+    margin-top: 5px;
+}
+header .nav-responsive img, header .nav-close img {
+    width: 100%;
+}
+
+/********** SECTION PROJECTS ****/
+.projects {
+    margin: 75px auto;   
+}
+.projects .retangle {
+    width: 136px;
+    height: 2px;
+    background: #D25CF1;
+}
+.projects h1 {
+    font-family:"Montserrat-Regular";
+    font-weight: normal;
+    font-size: 44px;
+    line-height: 54px;
+    margin: 24px 0;
+    color: #212121;
+}
+.projects h4 {
+    font-family:"Lato";
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 34px;
+    color: rgba(0,0,0,0.54);
+}
+.projects .saldometro {
+    width: 100%;
+    padding: 44px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.26), 0 2px 10px 0 rgba(0,0,0,0.16);
+    border-radius: 4px;
+    margin: 64px 0;
+    float: left;
+    background-image: url(../images/saldometro@2x.png);
+    background-image: 
+        -webkit-image-set(
+        "../images/saldometro.png" 1x,
+        "../images/saldometro@2x.png" 2x,
+    );
+    background-image: 
+        image-set(
+        "../images/saldometro.png" 1x,
+        "../images/saldometro@2x.png" 2x,
+    );
+    background-position:95% 100%;
+    background-size: 380px;
+    background-repeat: no-repeat;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.projects .saldometro h5 {
+    width: 167px;
+    height: 34px;
+    font-family: 'Lato', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 34px;
+    color: #33C45F;
+}
+.projects .faces {
+    float: left;
+    margin: 32px 0;
+}
+.projects .faces .face {
+    float: left;
+    display: inline;
+    margin: 20px 4px 0 4px;
+    width: 44px;
+    height: 44px;
+}
+.projects .faces .face:first-child {
+    margin: 0 4px;
+    width: 64px;
+    height: 64px;
+}
+.projects .faces .face img {
+    width: 100%;
+}
+.projects .face-plus {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #F5A623;
+}
+.projects .face-plus:hover {
+    background: #33C45F;
+}
+.projects .face-plus a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-family: 'Roboto';
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 34px;
+    padding: 5px 0 0 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.projects p {
+    float: left;
+    clear: both;
+    width: 50%;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 26px;
+    color: rgba(0,0,0,0.54);
+}
+.projects .icons {
+    float: left;
+    clear: both;
+    margin: 35px 0 0 0;
+}
+.projects .icons img {
+    width: 34.5px;
+    height: 39px;
+    margin: 0 20.72px 0 0;
+}
+
+/********** SECTION IDEA ****/
+.idea {
+    float: left;
+    text-align: center;
+    width: 100%;
+    padding: 64px 0;
+    background: #FFCD69;
+}
+.idea h2 {
+    font-family: 'Lato';
+    font-size: 54px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 65px;
+    color: rgba(0,0,0,0.87);
+    margin: 32px 0 16px;
+}
+.idea p {
+    font-family: 'Lato';
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 34px;
+    color: rgba(0,0,0,0.54);
+}
+.idea a {
+    color: #FFF;
+    background: #FF7575;
+    padding: 17px 144px;
+    font-family: 'Lato';
+    font-size: 24px;
+    text-align: center;
+    transition:all 0.1s ease-in-out;
+}
+.idea a:hover {
+    background: #33C45F;
+}
+.idea .line {
+    margin: 34px 0 0 0;
+}
+
+/********** FOOTER ****/
+footer {
+    margin: 0 auto;
+}
+footer ul {
+    float: left;
+    display: inline;
+    margin: 33px 0;
+}
+footer li {
+    float: left;
+    display: inline;
+    margin-right: 38px;
+}
+footer li:last-child {
+    margin-right: 0;
+}
+footer li a img {
+    height: 16px;
+}
+footer .signature {
+    float: right;
+    margin: 33px 0;
+    font-family: 'Montserrat';
+    font-size: 14px;
+    text-align: right;
+    line-height: 18px;
+    color: #9B9B9B;
+}
+
+
+
+/************************************************************ MEDIA PRINT ****/
+@media print {
+}
+
+
+/************************************************************ RESPONSIVE ****/
+@media only screen and (max-width: 900px) {
+    .size, .projects, footer {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    header .hcontent {
+        z-index: 9;
+    }
+    header .nav-responsive {
+        display: block;
+    }
+    header .nav-close {
+        opacity: 0.6;
+    }
+    header nav {
+        display: none;
+        position: absolute;
+        width: 100%;
+        z-index: 9;
+        left: 0;
+    }
+    header nav li {
+        position: relative;
+        font-family: "Montserrat-Regular";
+        float: left;
+        clear: both;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+    header nav li:hover .border {
+        opacity: 0;
+    }
+    header nav li a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 10px 0;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        background: rgba(0,0,0,0.9);
+    }
+    header nav li:hover a {
+       border-bottom: 1px solid rgba(51, 196, 95,0.4);
+    }
+    header .call {
+        width: 100%;
+        position: relative;
+        margin: 0;
+        top: 0;
+        left: 0;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    header {
+        height: 580px;
+    }
+    .projects .saldometro {
+        background-size: 290px;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    header .call h2 {
+        font-size: 44px;
+    }
+    header .call p {
+        font-size: 20px;
+    }
+    .projects h1 {
+        font-size: 40px;
+    }
+    .projects h4 {
+        font-size: 22px;
+    }
+    .projects p {
+        width: 100%;
+        color: rgba(0,0,0,0.8);
+    }
+    .projects .saldometro {
+        position: relative;
+        background: none;
+    }
+    .projects .saldometro::before {
+        content: "";
+        position: absolute;
+        top: 0; 
+        left: 0;
+        width: 100%; 
+        height: 100%;  
+        opacity: .1; 
+        z-index: -1;
+        background-image: url(../images/saldometro.png);
+        background-repeat: no-repeat;
+        background-position: 95% 100%;
+        background-size: 400px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    footer ul {
+        margin: 15px 0 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+    footer ul li {
+        float: none;
+        text-align: center;
+    }
+    footer .signature {
+        width: 100%;
+        text-align: center;
+        margin: 0 0 10px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .idea h2 {
+        font-size: 44px;
+    }
+    .idea p {
+        font-size: 20px;
+    }
+    .idea a {
+        padding: 17px 100px;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .projects {
+        text-align: center;
+    }
+    .projects .faces .face:first-child {
+        width: 54px;
+        height: 54px;
+    }
+    .projects .faces .face {
+        width: 36px;
+        height: 36px;
+    }
+    .projects .icons {
+        float: none;
+        padding: 35px 0 0 0;
+    }
+    .projects .saldometro h5 {
+        width: 100%;
+    }
+}
